@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<style>
+    /* Full-width input fields */
+    
+    input[type=text],
+    input[type=password] {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    /* Set a style for all buttons */
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+    }
+    /* Extra styles for the cancel button */
+    
+    .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+    }
+    /* Float cancel and signup buttons and add an equal width */
+    
+    .cancelbtn,
+    .signupbtn {
+        float: center;
+        width: 20%;
+    }
+    /* Add padding to container elements */
+    
+    .container {
+        padding: 16px;
+    }
+    
+    img.avatar {
+        width: 5%;
+        border-radius: 50%;
+    }
+    /* Clear floats */
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    /* Change styles for cancel button and signup button on extra small screens */
+    
+    @media screen and (max-width: 300px) {
+        .cancelbtn,
+        .signupbtn {
+            width: 100%;
+        }
+    }
+    
+    .cadastro {
+        background: black;
+        color: white;
+        column-rule-color: aliceblue;
+        list-style: none;
+        float: left;
+        font: 25px gabriola;
+        width: 100%;
+    }
+
+</style>
+<script language="javascript" type="text/javascript">
+    function validacaoCad() {
+        var email = document.form1.email.value;
+        var senha = document.form1.psw.value;
+        var rep_senha = document.form1.pswrepeat.value;
+        if (senha != rep_senha) {
+            alert('Senhas diferentes!');
+            document.form1.senha.focus();
+            return false;
+        }
+        if (document.form1.email.value == "" || document.form1.email.valueindexOf('@') == -1 || document.form1.email.value.indexOf('.') == -1) {
+            alert("Preencha campo Email corretamente, por favor!");
+            document.form1.email.value.focus();
+            return false;
+        }
+        return true;
+    
+
+</script>
+
+<body>
+    <center>
+        <nav>
+            <ul class="cadastro">
+                <h2>Cadastro(an)coragem</h2>
+            </ul>
+        </nav>
+        <form name="form1" action="#">
+            <div class="container">
+                <label><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label><b>Senha</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label><b>Repetir Senha</b></label>
+                <input type="password" placeholder="Repeat Password" name="pswrepeat" required>
+                <input type="checkbox" checked="checked"> Lembrar minha senha
+                <p>Obs: todas as informações compartilhadas serão mantidas em sigilo até que sejam autorizadas o seu uso no site</p>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn" onclick='java script:history.back()'>Cancelar :x</button>
+                    <button type="submit" class="signupbtn" onclick="return validacaoCad()">Prontinho!</button>
+                </div>
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>

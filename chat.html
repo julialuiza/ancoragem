@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset = utf-8">
+    <title>(an)coragem</title>
+    <style type="text/css">
+        .chat {
+            background: black;
+            color: white;
+            column-rule-color: aliceblue;
+            list-style: none;
+            float: left;
+            font: 25px gabriola;
+            width: 100%;
+        }
+        
+        #desc {
+            font-family: gabriola 55px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="chat">
+            <h2>Chat (an)coragem</h2>
+
+        </ul>
+    </nav>
+    <center>
+        <p id="desc"> Bem vindo ao nosso chat ! Aqui você pode manter contato com algum dos nossos colaboradores caso necessite de ajuda. Além disso, você também pode contar alguma coisa ou compartilhar sua história para que ajude outras pessoas. Nós responderemos o mais breve possível para seu email :) sinta-se a vontade </p>
+    </center>
+    <form action="pagina de ação" method="post" name="dados" onSubmit="return enviardados();">
+        <table width="588" border="0" align="center">
+            <tr>
+                <td width="118">
+                    <font size="5" face="Gabriola">Nome completo:</font>
+                </td>
+                <td width="460">
+                    <input name="tx_nome" type="text" class="formbutton" id="tx_nome" size="52" maxlength="150">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font size="5" face="Gabriola">E-mail:</font>
+                </td>
+                <td>
+                    <font size="5">
+                        <input name="tx_email" type="text" id="tx_email" size="52" maxlength="150" class="formbutton">
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font face="Gabriola">
+                        <font size="5">Mensagem<strong>:</strong></font>
+                    </font>
+                </td>
+                <td rowspan="2">
+                    <font size="2">
+                        <textarea name="tx_mensagem" cols="50" rows="8" class="formbutton" id="tx_mensagem" input></textarea>
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td height="85">
+                    <p><strong><font face="Gabriola"><font size="1">
+                        </font></font></strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td height="22"></td>
+                <td>
+                    <input name="Submit" type="submit" class="formobjects" value="Enviar mensagem :)">
+
+                    <input name="Reset" type="reset" class="formobjects" value="Redefinir">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
